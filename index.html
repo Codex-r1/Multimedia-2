@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save Our Wildlife - Conservation Organization</title>
-    
-    <!-- ===== External CSS ===== -->
+    <title>Save Our Wildlife:Conservation Organization</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- ===== Skip Link for Keyboard Navigation ===== -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <main id="main-content" class="container" role="main">
-
-        <!-- ===== Heading (2 marks) ===== -->
         <h1>🌿 Save Our Wildlife</h1>
         <p class="subtitle">Protecting nature for future generations</p>
-
-        <!-- ===== Video Embed with Playback Controls (4 marks) ===== -->
         <div class="video-wrapper" aria-label="Promotional video about wildlife conservation">
             <video 
                 id="wildlifeVideo"
@@ -29,25 +21,19 @@
                 poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='225'%3E%3Crect width='400' height='225' fill='%231a5a3a'/%3E%3Ctext x='200' y='112' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EWildlife Video%3C/text%3E%3C/svg%3E"
             >
                 <source src="wildlife.mp4" type="video/mp4">
-                <!-- ===== Fallback for unsupported browsers ===== -->
                 <p>
                     Your browser does not support the video tag.
                     <a href="wildlife.mp4" download>Download the video instead</a>.
                 </p>
-                <!-- ===== Track for accessibility (closed captions) ===== -->
+               
                 <track kind="captions" src="captions.vtt" srclang="en" label="English" default>
             </video>
         </div>
-
-        <!-- ===== Short Description Below Video (2 marks) ===== -->
         <div class="description">
-            <strong>🐾 About this video:</strong> 
+            <strong>About:</strong> 
             Join us on a journey to protect endangered species and their habitats. 
             Every action counts — together, we can make a difference. 
-            <span aria-hidden="true">🌍</span>
         </div>
-
-        <!-- ===== Button: Hide/Play Toggle (3 marks) ===== -->
         <div class="button-container">
             <button 
                 id="toggleVideoBtn" 
@@ -55,19 +41,11 @@
                 aria-label="Toggle video playback or visibility"
                 aria-pressed="false"
             >
-                <span id="btnIcon">⏸️</span> 
                 <span id="btnText">Hide Video</span>
             </button>
         </div>
 
-        <!-- ===== Footer note (accessibility) ===== -->
-        <p style="margin-top: 25px; font-size: 0.8rem; color: #6a8a7a; text-align: center; border-top: 1px solid #e0ebe4; padding-top: 15px;">
-            🌱 <span aria-hidden="true">♿</span> Accessible for all &bull; Responsive design
-        </p>
-
     </main>
-
-    <!-- ===== External JavaScript ===== -->
     <script src="script.js"></script>
 
 </body>
